@@ -1,7 +1,8 @@
+import { Container } from '@mui/material'
 import React from 'react'
 
 export const Nav = () => {
   return (
-    <div>Nav</div>
+    <Container sx={{color: "red"}}>Nav</Container>
   )
 }
