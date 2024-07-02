@@ -12,7 +12,6 @@ export default function Home() {
       }}
     >
       <Container>
-        <Nav />
         <hr></hr>
         <Hero />
       </Container>

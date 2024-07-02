@@ -5,7 +5,7 @@ import React from "react";
 
 export const Nav = () => {
   return (
-    <div
+    <Container
       style={{
         display: "flex",
         justifyContent: "space-between",
@@ -44,6 +44,6 @@ export const Nav = () => {
         width={40}
         height={10}
       />
-    </div>
+    </Container>
   );
 };

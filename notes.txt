@@ -1,0 +1,9 @@
+- I want to make a user login option option. If a some registers as a user with a password
+  they will get access to another page in the website which prompts them for some astrology info
+  and then after they imputed it, they can get daily astology readings there
+
+- thinking of using firebase for storage. I want to build an api in java to fetch userdata,
+  product data, and fetch and compute astrology data. This will mean I'll have to pay for hosting.
+
+- I also want to include that outro from dorohdoro, the one with the glowing mushrooms somwhere in the
+  app (https://www.youtube.com/watch?v=KY3MyHAFc68&ab_channel=TOHOanimation%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB)

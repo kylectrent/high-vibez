@@ -1,12 +1,18 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
+import { Button } from "./Button";
 
 export const Hero = () => {
   return (
-    <div>
+    <Box
+      display={"flex"}
+      flexDirection={"column"}
+      height={"50vh"}
+      justifyContent={"center"}
+    >
       <Typography
         variant="h1"
-        paddingTop={"1rem"}
+        //paddingTop={"1rem"}
         textTransform={"uppercase"}
         fontSize={"1.5rem"}
         letterSpacing={"0.5rem"}
@@ -17,6 +23,7 @@ export const Hero = () => {
       <Typography variant="h2" fontWeight={"800"}>
         For your mouth to drink, so drink them
       </Typography>
-    </div>
+      <Button variant="contained" color="#00ffb2"></Button>
+    </Box>
   );
 };
