@@ -1,15 +1,15 @@
-import { Container } from "@mui/material";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import { Container } from '@mui/material';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 export const Nav = () => {
   return (
     <Container
       style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
       }}
     >
       <Image
@@ -18,23 +18,23 @@ export const Nav = () => {
         width={400}
         height={40}
       />
-      <ul style={{ textTransform: "uppercase", textDecoration: "none" }}>
-        <Link style={{ marginRight: "2rem", fontWeight: "700" }} href="./about">
+      <ul style={{ textTransform: 'uppercase', textDecoration: 'none' }}>
+        <Link style={{ marginRight: '2rem', fontWeight: '700' }} href="./about">
           About
         </Link>
         <Link
-          style={{ marginRight: "2rem", fontWeight: "700" }}
+          style={{ marginRight: '2rem', fontWeight: '700' }}
           href="./products"
         >
           Products
         </Link>
         <Link
-          style={{ marginRight: "2rem", fontWeight: "700" }}
+          style={{ marginRight: '2rem', fontWeight: '700' }}
           href="./reviews"
         >
           Reviews
         </Link>
-        <Link style={{ marginRight: "2rem", fontWeight: "700" }} href="./about">
+        <Link style={{ marginRight: '2rem', fontWeight: '700' }} href="./about">
           Recipes
         </Link>
       </ul>
