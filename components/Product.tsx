@@ -3,7 +3,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Image from 'next/image';
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import ProductCounter from './ProductCounter';
 import { Button } from './Button';
 
@@ -20,7 +20,7 @@ export const Product = (productProps: ProductProps) => {
       <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
         <Image src={src} width={500} height={500} alt={alt}></Image>
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-          <h1>{name}</h1>
+          <Typography variant="h4">{name}</Typography>
           <ProductCounter />
           <Button variant="contained" color="#59a46f">
             Add To Cart

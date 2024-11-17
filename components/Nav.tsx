@@ -55,6 +55,12 @@ export const Nav = () => {
           >
             Recipes
           </Link>
+          <Link
+            style={{ marginRight: '2rem', fontWeight: '700' }}
+            href="./chai"
+          >
+            Chai (v1)
+          </Link>
         </ul>
         <Button onClick={toggleCartModal}>
           <CartIcon />
