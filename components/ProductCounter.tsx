@@ -12,15 +12,11 @@ const ProductCounter = () => {
   return (
     <Box>
       <Button onClick={decrement}>
-        <Typography variant="h3">
-          -
-        </Typography>
+        <Typography variant="h4">-</Typography>
       </Button>
       {count}
       <Button onClick={increment}>
-        <Typography variant="h5">
-          +
-        </Typography>
+        <Typography variant="h5">+</Typography>
       </Button>
     </Box>
   );
