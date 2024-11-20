@@ -9,7 +9,7 @@ export const Cart = () => {
         position: 'absolute',
         height: '100vh',
         width: '100vw',
-        backgroundColor: 'rgba(255, 0, 0, 0.5)',
+        backgroundColor: 'rgba(0, 0, 0, 0.75)',
         zIndex: 1301, // Ensure it's above other elements (such as MUI buttons, which have z-index of 1300, box does not have z-index in mui lib)
       }}
     >
@@ -35,7 +35,7 @@ export const Cart = () => {
           <Typography>Total</Typography>
           <Typography>$$$</Typography>
         </Box>
-        <Button variant="contained" color="#59a46f" sx={{ width: '20vw' }}>
+        <Button variant="contained" color="#59a46f" sx={{ width: '100%' }}>
           Checkout
         </Button>
       </Box>
