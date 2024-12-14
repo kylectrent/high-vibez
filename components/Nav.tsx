@@ -1,49 +1,72 @@
+'use client';
 import { Container } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+import CartIcon from './CartIcon';
+import { Cart } from './Cart';
+import Button from '@mui/material/Button';
 
 export const Nav = () => {
+  const [showCart, setShowCart] = useState(false);
+  const toggleCartModal = () => {
+    setShowCart(!showCart);
+  };
   return (
-    <Container
-      style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-      }}
-    >
-      <Image
-        src="./assets/shared/desktop/high-vibez.svg"
-        alt="logo"
-        width={400}
-        height={40}
-      />
-      <ul style={{ textTransform: 'uppercase', textDecoration: 'none' }}>
-        <Link style={{ marginRight: '2rem', fontWeight: '700' }} href="./about">
-          About
+    <div>
+      <Container
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}
+      >
+        <Link href="./">
+          <Image
+            src="./assets/shared/desktop/high-vibez.svg"
+            alt="logo"
+            width={400}
+            height={40}
+          />
         </Link>
-        <Link
-          style={{ marginRight: '2rem', fontWeight: '700' }}
-          href="./products"
-        >
-          Products
-        </Link>
-        <Link
-          style={{ marginRight: '2rem', fontWeight: '700' }}
-          href="./reviews"
-        >
-          Reviews
-        </Link>
-        <Link style={{ marginRight: '2rem', fontWeight: '700' }} href="./about">
-          Recipes
-        </Link>
-      </ul>
-      <Image
-        src="./assets/shared/desktop/icon-cart.svg"
-        alt="cart"
-        width={40}
-        height={10}
-      />
-    </Container>
+
+        <ul style={{ textTransform: 'uppercase', textDecoration: 'none' }}>
+          <Link
+            style={{ marginRight: '2rem', fontWeight: '700' }}
+            href="./about"
+          >
+            About
+          </Link>
+          <Link
+            style={{ marginRight: '2rem', fontWeight: '700' }}
+            href="./products"
+          >
+            Products
+          </Link>
+          <Link
+            style={{ marginRight: '2rem', fontWeight: '700' }}
+            href="./reviews"
+          >
+            Reviews
+          </Link>
+          <Link
+            style={{ marginRight: '2rem', fontWeight: '700' }}
+            href="./about"
+          >
+            Recipes
+          </Link>
+          <Link
+            style={{ marginRight: '2rem', fontWeight: '700' }}
+            href="./chai"
+          >
+            Chai (v1)
+          </Link>
+        </ul>
+        <Button onClick={toggleCartModal}>
+          <CartIcon />
+        </Button>
+      </Container>
+      {showCart && <Cart />}
+    </div>
   );
 };
