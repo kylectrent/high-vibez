@@ -1,5 +1,13 @@
+import type { NextApiRequest, NextApiResponse } from "next";
 import data from '../../data/data.json';
 
-export async function GET() {
-  return new Response(JSON.stringify(data));
+type Data = {
+  message: string
+}
+ 
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<any>
+) {
+  res.status(200).json(data)
 }
