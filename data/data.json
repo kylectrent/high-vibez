@@ -4,9 +4,10 @@
     "slug": "green-tea",
     "name": "Sexy Green Tea Time",
     "image": {
-      "mobile": "./assets/product-yx1-earphones/mobile/image-product.jpg",
-      "tablet": "./assets/product-yx1-earphones/tablet/image-product.jpg",
-      "desktop": "./assets/product-yx1-earphones/desktop/image-product.jpg"
-    }
+      "mobile": "/assets/product-chai/chai.jpg",
+      "tablet": "/assets/product-chai/chai.jpg",
+      "desktop": "/assets/product-chai/chai.jpg"
+    },
+    "alt": "Green Tea"
   }
 ]
