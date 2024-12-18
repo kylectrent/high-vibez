@@ -9,3 +9,7 @@ export type APIProduct = {
     },
     alt: string;
 }
+
+export interface ProductCount extends APIProduct {
+    count: number;
+}

@@ -34,3 +34,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## To do list
+
+* More product data
+- Eventually we create a Java Springboot API and move the data into a database
+* Better styling
+* Impliment a user login system
+* Integrate stripe API into the app
+- Add payments page
+- Disable payments for now, put some message showing we are not accepting payments at this time
+- Put the option to pay as a guest or as a user
+* Add a way to save user state across sessions, so when they log back the items still in cart
+* Add a fun page that's Madison's idea
