@@ -37,13 +37,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## To do list
 
-* More product data
-- Eventually we create a Java Springboot API and move the data into a database
-* Better styling
-* Impliment a user login system
-* Integrate stripe API into the app
-- Add payments page
-- Disable payments for now, put some message showing we are not accepting payments at this time
-- Put the option to pay as a guest or as a user
-* Add a way to save user state across sessions, so when they log back the items still in cart
-* Add a fun page that's Madison's idea
+- More product data
+
+* Eventually we create a Java Springboot API and move the data into a database
+
+- Better styling
+- Impliment a user login system
+- Integrate stripe API into the app
+
+* Add payments page
+* Disable payments for now, put some message showing we are not accepting payments at this time
+* Put the option to pay as a guest or as a user
+
+- Add a way to save user state across sessions, so when they log back the items still in cart
+- Add a fun page that's Madison's idea

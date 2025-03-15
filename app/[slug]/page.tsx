@@ -1,6 +1,6 @@
-"use client";
-import React, { useEffect } from 'react'
-import { usePathname } from 'next/navigation'
+'use client';
+import React, { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { APIProduct } from '@/types';
 import { Product } from '@/components/Product';
 
@@ -8,27 +8,28 @@ export default function Page() {
   const pathname = usePathname().replace(/^\//, '');
   const [product, setProduct] = React.useState<APIProduct>({
     id: 0,
-    slug: "",
-    name: "",
+    slug: '',
+    name: '',
     image: {
-      mobile: "",
-      tablet: "",
-      desktop: "",
+      mobile: '',
+      tablet: '',
+      desktop: '',
     },
-    alt: ""
-  })
+    alt: '',
+  });
 
-    React.useEffect(() => {
-        fetch('api/data')
-          .then((response) => response.json())
-          .then((response) => {
-            response.map((item: APIProduct) => {
-              if(item.slug == pathname) {
-                setProduct(item);
-              }
-            });
+  //we want to change this to hit my java springboot api
+  React.useEffect(() => {
+    fetch('api/data')
+      .then((response) => response.json())
+      .then((response) => {
+        response.map((item: APIProduct) => {
+          if (item.slug == pathname) {
+            setProduct(item);
+          }
         });
-    }, [pathname]);
+      });
+  }, [pathname]);
 
   return (
     <div>
@@ -37,6 +38,6 @@ export default function Page() {
         alt={product.alt}
         name={product.name}
       />
-    </div>  
-  )
+    </div>
+  );
 }
